@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = Demo3
+build_property.RootNamespace = Demo3
+build_property.ProjectDir = D:\CodeWare\RocBlog\Demo3\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\CodeWare\RocBlog\Demo3
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/CodeWare/RocBlog/Demo3/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Apps/Apps.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xBcHBzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Apps/Gobang.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xHb2JhbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Articles/Article.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcQXJ0aWNsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Articles/Articles.Category.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcQXJ0aWNsZXMuQ2F0ZWdvcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Articles/Articles.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcQXJ0aWNsZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Articles/Articles.Tag.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcQXJ0aWNsZXMuVGFnLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Categories/Categories.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xDYXRlZ29yaWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/FriendLinks/FriendLinks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJpZW5kTGlua3NcRnJpZW5kTGlua3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Menu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Menus/Map.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudXNcTWFwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Pages/Tags/Tags.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFnc1xUYWdzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Shared/ErrorTip.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEVycm9yVGlwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Shared/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEZvb3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Shared/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Shared/Loading.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvYWRpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeWare/RocBlog/Demo3/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

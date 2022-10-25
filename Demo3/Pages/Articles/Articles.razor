@@ -1,0 +1,13 @@
+﻿@page "/articles/"
+@page "/articles/article/{page:int}"
+@page "/articles/{page:int}"
+
+<Loading />
+
+@code {
+    /// <summary>
+    /// 当前页码
+    /// </summary>
+    [Parameter]
+    public int? page { get; set; }
+}

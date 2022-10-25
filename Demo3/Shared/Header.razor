@@ -1,0 +1,37 @@
+﻿<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <NavLink class="menu-item" href="/" Match="NavLinkMatch.All">首页</NavLink>
+            </div>
+            <div class="menu navbar-right">
+                <NavLink class="menu-item" href="menus"><div class="item-name">菜单</div></NavLink>
+                <NavLink class="menu-item" href="articles"><div class="item-name">文章</div></NavLink>
+                <NavLink class="menu-item" href="categories"><div class="item-name">分类</div></NavLink>
+                <NavLink class="menu-item" href="tags"><div class="item-name">标签</div></NavLink>
+                <NavLink class="menu-item position-father" @onclick="ToggleNavMenu">
+                    <div class="item-name">&#9776; 小工具</div>
+                    <ul class="text-align @ToolsCssClass">
+                        <li><NavLink href="http://www.jsons.cn/img2base64" target="_blank" title="在线工具导航">Jsons.cn</NavLink></li>
+                        <li><NavLink href="https://cli.im/" target="_blank" title="免费的二维码生成工具">草料二维码</NavLink></li>
+                        <li><NavLink href="https://lab.magiconch.com/china-ex/?event_source=timeline&source=timeline&dt_dapp=1&dt_platform=com.douban.activity.wechat_friends" target="_blank" title="中国去过哪些省">中国制霸</NavLink></li>
+                        <li><NavLink href="https://lab.magiconch.com/world-ex/" target="_blank" title="全球去过哪些国家">全球制霸</NavLink></li>
+                        <li><NavLink href="https://magiconch.com/vaporwave/" target="_blank" title="虚拟信号蒸汽波风格化影像后期工具">蒸 気 機</NavLink></li>
+                        <li><NavLink href="https://lab.magiconch.com/sakana/" target="_blank" title="さかなー－－－！！">Sakana! 石蒜模拟器</NavLink></li>
+                        <li><NavLink href="https://lab.magiconch.com/one-last-image/" target="_blank" title="One Last Kiss 封面风格生成">卢浮宫生成器</NavLink></li>
+                        <li><NavLink href="https://lab.magiconch.com/eva-title/" target="_blank" title="Evangelion Title Card Generator">福音战士标题生成器</NavLink></li>
+                        <li><NavLink href="https://x.magiconch.com" target="_blank" title="梗图生成">梗图生成器</NavLink></li>
+                        <li><NavLink href="https://magiconch.com/fontfont/" target="_blank" title="字符生成字符字工具，你搁着搁着呢？">字符字生成器</NavLink></li>
+                        <li><NavLink href="https://magiconch.com/image-split-join/" target="_blank" title="给图像切开再粘上的一个小工具">图像切割粘贴器</NavLink></li>
+                        <li><NavLink href="https://v.magiconch.com/mine-sweeper" target="_blank" title="微软宣布，旗下扛鼎大作《扫雷》将与知名动漫 IP《新世纪福音战士》展开联动！">EVANGELION & 扫雷</NavLink></li>
+                    </ul>
+                </NavLink>
+                <NavLink class="menu-item apps" href="apps"><div class="item-name">App</div></NavLink>
+                
+                <NavLink>主题&nbsp;·&nbsp;@currentTheme</NavLink>
+                <input id="switch_default" type="checkbox" class="switch_default" @onchange="SwitchTheme" checked="@(currentTheme == "Dark")" />
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+</header>
