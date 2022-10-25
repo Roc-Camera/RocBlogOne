@@ -19,5 +19,8 @@ func = {
         } else {
             document.querySelector('body').classList.remove('dark-theme');
         }
+    },
+    render2048Game: async function () {
+        await this._loadScript('./js/2048.js');
     }
 };
