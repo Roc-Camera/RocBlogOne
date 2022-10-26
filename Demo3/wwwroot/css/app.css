@@ -1462,3 +1462,31 @@ header label {
         display: block;
         font-size: 12px;
     }
+    /*apps样式*/
+.apps-container {
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+    .apps-container a {
+        display: inline-block;
+        width: 216px;
+        padding: 36px 0;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+
+        .apps-container a h3 {
+            font-size: 36px;
+            font-weight: 300;
+            padding: 14px 0 3.5px;
+            color: #05b0ff;
+        }
+
+        .apps-container a p {
+            font-weight: 200;
+            color: #aaa;
+        }
