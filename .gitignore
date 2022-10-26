@@ -1,4 +1,6 @@
 .DS_Store
+obj/
+bin/
 node_modules/
 dist/
 npm-debug.log*
@@ -13,3 +15,7 @@ package-lock.json
 *.ntvs*
 *.njsproj
 *.sln
+*.dll
+*.pdb
+*.vsidx
+
