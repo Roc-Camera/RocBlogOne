@@ -22,5 +22,10 @@ func = {
     },
     render2048Game: async function () {
         await this._loadScript('./js/2048.js');
+    },
+    _loadScript: async function (url) {
+        let response = await fetch(url);
+        var js = await response.text();
+        eval(js);
     }
 };

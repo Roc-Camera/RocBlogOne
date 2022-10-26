@@ -189,32 +189,6 @@ template {
     display: none;
 }
 
-@font-face {
-    font-family: 'Fira Code Medium';
-    src: url('https://static.meowv.com/fonts/FiraCode-Medium.woff2') format('woff2'), url("https://static.meowv.com/fonts/FiraCode-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-}
-
-html {
-    font-family: 'Fira Code Medium', Microsoft Yahei, monospace;
-    overflow-x: hidden;
-}
-
-    html::-webkit-scrollbar {
-        width: 5px;
-        height: 5px;
-    }
-
-    html::-webkit-scrollbar-thumb {
-        height: 20px;
-        background-color: #5A9600;
-    }
-
-        html::-webkit-scrollbar-thumb:hover {
-            background-color: #5A9600;
-        }
-
 body {
     font-size: 11pt;
     font-weight: normal;
@@ -451,7 +425,7 @@ input[type="radio"] {
     }
 
     .navbar .menu .active {
-        display: block;
+        display:none;
         color: #292a2d;
         backdrop-filter: blur(100px);
     }
@@ -459,6 +433,9 @@ input[type="radio"] {
 .dark-theme .navbar .menu .active {
     color: #fff;
     backdrop-filter: blur(100px);
+}
+.position-father:hover .active {
+    display: block;
 }
 
 .navbar-header a:hover,
