@@ -4,7 +4,7 @@ namespace Demo3.Shared
 {
     public partial class Header
     {
-        private string currentTheme;
+        private string currentTheme = "Light";
 
         protected override async Task OnInitializedAsync()
         {

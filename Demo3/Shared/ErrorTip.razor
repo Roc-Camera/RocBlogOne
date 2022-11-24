@@ -1,5 +1,12 @@
-﻿<div class="main">
-    <div class="post-wrap">
-        <h2 class="eror-tip">骚瑞，这是个无效地址！</h2>
-    </div>
+﻿@inject NavigationManager NavigationManager
+<div class="main">
+    <Result Status="404"
+    Title="404"
+    SubTitle="骚瑞，这是个无效地址！"
+    Extra="extra" />
 </div>
+@code
+{
+    RenderFragment extra =@<Button Type="primary"><a href="/" style="color:#fff">返回主页</a></Button>
+    ;
+}
