@@ -211,7 +211,7 @@ body {
     }
 
     body.dark-theme {
-        background-color: #292a2d;
+        background-color: #121212;
         color: #a9a9b3;
         transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
     }
@@ -223,7 +223,7 @@ a {
 }
 
 .dark-theme a {
-    color: #a9a9b3;
+    color: #a9a9b3!important;
     text-decoration: none;
     transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
 }
@@ -247,14 +247,16 @@ a {
     height: 4rem;
     line-height: 4rem;
     width: 100%;
+    min-width:775px;
 }
 
     .navbar .container {
         width: auto;
         text-align: center;
-        margin: 0 40px;
+        padding: 0 40px;
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid #D8D8D8;
     }
 
 .main {
@@ -364,6 +366,7 @@ input[type="radio"] {
 .navbar .menu {
     display: flex;
     align-items: center;
+    font-size:18px;
 }
 
     .navbar .menu a {
@@ -837,12 +840,12 @@ header label {
         }
 
     .dark-theme .navbar-mobile .container .menu {
-        background: #292a2d;
+        background: #121212;
         /*border-top: 1px solid #87878d;*/
     }
 
     .dark-theme .navbar-mobile .container {
-        background: #292a2d !important;
+        background: #121212 !important;
     }
 
     .archive {
@@ -993,12 +996,12 @@ header label {
 }
 
 .dark-theme .post-content {
-    background: #292a2d !important;
+    background: #121212 !important;
     color: #eee !important;
 }
 
     .dark-theme .post-content p code, .dark-theme .post-content ul li code {
-        background: #292a2d !important;
+        background: #121212 !important;
     }
 
 .apps {
@@ -1354,14 +1357,34 @@ header label {
         cursor: pointer;
     }
 
-        .apps-container a h3 {
+        .apps-container a h3{
             font-size: 36px;
             font-weight: 300;
             padding: 14px 0 3.5px;
             color: #05b0ff;
         }
 
-        .apps-container a p {
+        .apps-container a p, .funs-container a p{
             font-weight: 200;
             color: #aaa;
+        }
+.funs-container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+    .funs-container a {
+        display: inline-block;
+        width: 326px;
+        padding: 36px 0;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+        .funs-container a h3 {
+            font-size: 36px;
+            font-weight: 300;
+            padding: 14px 0 3.5px;
+            color: #4979a9;
         }
