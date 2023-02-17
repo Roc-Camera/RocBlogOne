@@ -1,37 +1,68 @@
 ﻿<header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo">
-                <NavLink class="menu-item" href="/" Match="NavLinkMatch.All">首页</NavLink>
-            </div>
-            <div class="menu navbar-right">
-                <NavLink class="menu-item" href="menus"><div class="item-name">菜单</div></NavLink>
-                <NavLink class="menu-item" href="articles"><div class="item-name">文章</div></NavLink>
-                <NavLink class="menu-item" href="categories"><div class="item-name">分类</div></NavLink>
-                <NavLink class="menu-item" href="tags"><div class="item-name">标签</div></NavLink>
-                <NavLink class="menu-item position-father" @onclick="ToggleNavMenu">
-                    <div class="item-name">&#9776; 小工具</div>
-                    <ul class="text-align @ToolsCssClass">
-                        <li><NavLink href="http://www.jsons.cn/img2base64" target="_blank" title="在线工具导航">Jsons.cn</NavLink></li>
-                        <li><NavLink href="https://cli.im/" target="_blank" title="免费的二维码生成工具">草料二维码</NavLink></li>
-                        <li><NavLink href="https://lab.magiconch.com/china-ex/?event_source=timeline&source=timeline&dt_dapp=1&dt_platform=com.douban.activity.wechat_friends" target="_blank" title="中国去过哪些省">中国制霸</NavLink></li>
-                        <li><NavLink href="https://lab.magiconch.com/world-ex/" target="_blank" title="全球去过哪些国家">全球制霸</NavLink></li>
-                        <li><NavLink href="https://magiconch.com/vaporwave/" target="_blank" title="虚拟信号蒸汽波风格化影像后期工具">蒸 気 機</NavLink></li>
-                        <li><NavLink href="https://lab.magiconch.com/sakana/" target="_blank" title="さかなー－－－！！">Sakana! 石蒜模拟器</NavLink></li>
-                        <li><NavLink href="https://lab.magiconch.com/one-last-image/" target="_blank" title="One Last Kiss 封面风格生成">卢浮宫生成器</NavLink></li>
-                        <li><NavLink href="https://lab.magiconch.com/eva-title/" target="_blank" title="Evangelion Title Card Generator">福音战士标题生成器</NavLink></li>
-                        <li><NavLink href="https://x.magiconch.com" target="_blank" title="梗图生成">梗图生成器</NavLink></li>
-                        <li><NavLink href="https://magiconch.com/fontfont/" target="_blank" title="字符生成字符字工具，你搁着搁着呢？">字符字生成器</NavLink></li>
-                        <li><NavLink href="https://magiconch.com/image-split-join/" target="_blank" title="给图像切开再粘上的一个小工具">图像切割粘贴器</NavLink></li>
-                        <li><NavLink href="https://v.magiconch.com/mine-sweeper" target="_blank" title="微软宣布，旗下扛鼎大作《扫雷》将与知名动漫 IP《新世纪福音战士》展开联动！">EVANGELION & 扫雷</NavLink></li>
-                    </ul>
-                </NavLink>
-                <NavLink class="menu-item apps" href="apps"><div class="item-name">App</div></NavLink>
-                
-                <NavLink>主题&nbsp;·&nbsp;@currentTheme</NavLink>
-                <input id="switch_default" type="checkbox" class="switch_default" @onchange="SwitchTheme" checked="@(currentTheme == "Dark")" />
-                <label for="switch_default" class="toggleBtn"></label>
-            </div>
-        </div>
-    </nav>
+    <div class="menu navbar-right">
+        <Menu Mode=MenuMode.Horizontal Style="@themeColor">
+            <MenuItem Key="mail" Style="font-size:18px">
+                <Icon Type="home" Theme="outline"></Icon>
+                <NavLink href="/">首页</NavLink>
+            </MenuItem>
+            <SubMenu TitleTemplate=@sub1Title1>
+                <SubMenu Title="地图标记" Style="font-size:16px">
+                    <MenuItem Key="setting1:1"><a href="https://lab.magiconch.com/china-ex/?event_source=timeline&source=timeline&dt_dapp=1&dt_platform=com.douban.activity.wechat_friends" target="_blank" Style="font-size:16px">中国制霸</a></MenuItem>
+                    <MenuItem Key="setting1:2"><a href="https://lab.magiconch.com/world-ex/" target="_blank" Style="font-size:16px">全球制霸</a></MenuItem>
+                </SubMenu>
+                <MenuItemGroup Title="生成器" Style="font-size:16px">
+                    <MenuItem Key="setting:2"><a href="https://lab.magiconch.com/one-last-image/" target="_blank" Style="font-size:16px">卢浮宫生成器</a></MenuItem>
+                    <MenuItem Key="setting:3"><a href="https://lab.magiconch.com/eva-title/" target="_blank" Style="font-size:16px">福音战士标题生成器</a></MenuItem>
+                    <MenuItem Key="setting:4"><a href="https://x.magiconch.com" target="_blank" Style="font-size:16px">梗图生成器</a></MenuItem>
+                    <MenuItem Key="setting:5"><a href="https://magiconch.com/fontfont/" target="_blank" Style="font-size:16px">字符字生成器</a></MenuItem>
+                </MenuItemGroup>
+                <MenuItemGroup Title="其他" Style="font-size:16px">
+                    <MenuItem Key="setting:6"><a href="https://magiconch.com/vaporwave/" target="_blank" Style="font-size:16px">蒸 気 機</a></MenuItem>
+                    <MenuItem Key="setting:7"><a href="https://lab.magiconch.com/sakana/" target="_blank" Style="font-size:16px">Sakana! 石蒜模拟器</a></MenuItem>
+                    <MenuItem Key="setting:8"><a href="https://v.magiconch.com/mine-sweeper" target="_blank" Style="font-size:16px">EVANGELION & 扫雷</a></MenuItem>
+                    <MenuItem Key="setting:9"><a href="https://magiconch.com/image-split-join/" target="_blank" Style="font-size:16px">图像切割粘贴器</a></MenuItem>
+                </MenuItemGroup>
+                <MenuDivider />
+            </SubMenu>
+
+            <SubMenu TitleTemplate=@sub1Title2>
+                <MenuItemGroup>
+                    <MenuItem Key="setting:1" RouterLink="/gobang" Style="font-size:16px">五子棋</MenuItem>
+                    <MenuItem Key="setting:2" RouterLink="/2048" Style="font-size:16px">2048</MenuItem>
+                    <MenuItem Key="setting:3"><a href="https://support.qq.com/product/440024" target="_blank" Style="font-size:16px">留言板</a></MenuItem>
+                    <MenuItem Key="setting:4" RouterLink="/friendlinks" Style="font-size:16px">友情链接</MenuItem>
+                </MenuItemGroup>
+            </SubMenu>
+        </Menu>
+    </div>
+
+    <div style="display:flex;align-items: center;top: 1em;right: 1em;position: absolute;">
+        @if (currentTheme == "Dark")
+        {
+            <svg class="icon" aria-hidden="true" style="width:18px;height:18px;">
+                <use xlink:href="#icon-yueliang1"></use>
+            </svg>
+        }
+        else
+        {
+            <svg class="icon" aria-hidden="true" style="width:24px;height:24px;">
+                <use xlink:href="#icon-taiyang1"></use>
+            </svg>
+        }
+        <Switch Checked="@(currentTheme == "Dark")" Size="small" CheckedChildren="夜" UnCheckedChildren="昼" OnChange="SwitchTheme" Style="margin-left:5px;" />
+    </div>
+
 </header>
+
+@code
+{
+    RenderFragment sub1Title1 =
+    @<MenuItem Style="font-size:18px">
+        <Icon Type="smile" Theme="outline"></Icon>
+        <NavLink href="funs">有趣的网站</NavLink>
+    </MenuItem>;
+    RenderFragment sub1Title2 =
+    @<Template>
+        <NavLink class="apps" href="apps" style="font-size:18px">App</NavLink>
+    </Template>;
+}

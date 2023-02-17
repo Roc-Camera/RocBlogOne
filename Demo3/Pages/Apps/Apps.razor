@@ -1,18 +1,21 @@
 ﻿@page "/apps"
-
-<div class="container">
-    <div class="post-wrap">
-        <h2 class="post-title">-&nbsp;Apps&nbsp;-</h2>
-        <ul>
-            <li>
-                <a target="_blank" href="/gobang"><h3>五子棋</h3></a>
-            </li>
-            <li>
-                <a target="_blank" href="https://support.qq.com/product/440024"><h3>留言板</h3></a>
-            </li>
-            <li>
-                <NavLink href="/friendlinks"><h3>友情连接</h3></NavLink>
-            </li>
-        </ul>
+<div class="main">
+    <div class="apps-container">
+         <NavLink href="/gobang">
+             <h3>五子棋</h3>
+             <p>经典的五子棋游戏</p>
+         </NavLink>
+         <NavLink href="/2048">
+             <h3>2048</h3>
+             <p>程序员版2048</p>
+         </NavLink>
+         <NavLink target="_blank" href="https://support.qq.com/product/440024">
+             <h3>留言板</h3>
+             <p>吐个槽或者鼓励一下</p>
+         </NavLink>
+         <NavLink href="/friendlinks">
+             <h3>友情连接</h3>
+             <p>不需要描述了，如题</p>
+         </NavLink>
     </div>
 </div>

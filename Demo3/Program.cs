@@ -17,6 +17,8 @@ namespace Demo3
 
             builder.Services.AddSingleton(typeof(Common));
 
+            builder.Services.AddAntDesign();
+
             await builder.Build().RunAsync();
 
         }

@@ -1,0 +1,32 @@
+﻿@page "/login"
+@layout LoginLayout
+<link href="/css/Login.css" rel="stylesheet" />
+<div class="login-body">
+<div class="login-box">
+        <div class="owl @owlClass" id="owl">
+            <div class="hand"></div>
+            <div class="hand hand-r"></div>
+            <div class="arms">
+                <div class="arm"></div>
+                <div class="arm arm-r"></div>
+            </div>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="账号">
+            <input type="password" placeholder="密码" id="password" @onfocus="AddClass" @onfocusout="ReMoveClass">
+            <button>登录</button>
+        </div>
+    </div>
+</div>
+
+@code{
+    private string owlClass = string.Empty;
+    private void AddClass()
+    {
+        owlClass = "password";
+    }
+    private void ReMoveClass()
+    {
+        owlClass = "";
+    }
+}
