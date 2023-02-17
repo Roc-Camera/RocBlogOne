@@ -1,0 +1,44 @@
+﻿@page "/camera"
+<style scoped>
+    .photos-box
+    {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    li{
+        display:inline-block;
+        margin:40px 50px;
+    }
+
+    .photos
+    {
+        width:300px;
+        height:300px;
+        border-radius:10px;
+    }
+</style>
+<div class="main photos-box">
+   @* 这页实现的功能是电子相册
+    目前先占位，要的不是展示单张照片，而是一个个合集，全部表示所有的合集，全部包括人像、风光、动物、纪实等。
+    点击风光 会筛选出风光下的合集，风光合集下是一个个地名合集，点开单个合集可以直接查看内部照片，每个合集内的第一张照片作为封面以及头部背景，在头部背景上有个上传照片按钮*@
+    <div>
+        <Button Type="@ButtonType.Text">全部</Button>
+        <Button Type="@ButtonType.Text">人像</Button>
+        <Button Type="@ButtonType.Text">风光</Button>
+        <Button Type="@ButtonType.Text">动物</Button>
+        <Button Type="@ButtonType.Text">纪实</Button>
+    </div>
+    <ul>
+        @for (int i = 0; i < 50; i++)
+        {
+            <li>
+                <Image Src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" Class="photos"/>
+            </li>
+        }
+    </ul>
+    </div>
+
+@code {
+    
+}
