@@ -2,6 +2,8 @@
 # RocBlog
 
 一个基于Blazor开发的个人博客🚀
+有基于blazor开发的五子棋游戏，2048游戏...
+博客基本框架都有了，但还需完善...
 <!-- PROJECT SHIELDS -->
 
 [![Contributors][contributors-shield]][contributors-url]
